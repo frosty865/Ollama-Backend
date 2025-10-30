@@ -1,0 +1,11 @@
+# %AppData%\Ollama\config.yaml
+model_path: "D:\\OllamaModels"
+
+
+num_thread: 16          # use most of your 20 logical threads
+num_gpu: 1              # set to 0 if no discrete GPU
+gpu_layers: 35          # push 30–35 layers onto GPU if you have 8–12 GB VRAM
+context_length: 4096    # default is 2048; double it for coding sessions
+batch_size: 512         # keeps throughput high without exhausting RAM
+kv_cache_type: auto     # let Ollama auto-select (fp16 on GPU, q4_K_M on CPU)
+keep_alive: 15m         # keep models hot for faster switching

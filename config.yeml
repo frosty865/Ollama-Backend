@@ -1,0 +1,11 @@
+# Ollama configuration for high-performance local inference
+# Adjust the 'model_path' if you want to move models off C:\
+
+model_path: "D:\\OllamaModels"    # optional, use double backslashes
+num_thread: 16
+num_gpu: 1
+gpu_layers: 35
+context_length: 4096
+batch_size: 512
+kv_cache_type: auto
+keep_alive: 15m

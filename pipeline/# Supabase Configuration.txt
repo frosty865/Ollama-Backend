@@ -1,0 +1,6 @@
+# Supabase Configuration
+setx SUPABASE_URL=https://wivohgbuuwxoyfyzntsd.supabase.co
+setx SUPABASE_SERVICE_ROLE_KEY "sb_secret_o6CXg_vuAGMAvnnsfgNDqw_9ZQoQyUk"
+setx OLLAMA_HOST "http://localhost:11434"
+setx OLLAMA_EMBED_MODEL "nomic-embed-text"
+setx LOG_LEVEL "INFO

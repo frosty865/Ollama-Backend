@@ -1,0 +1,261 @@
+{
+  "filename": "20251016_124454_USSS_Averting_Targeted_School_Violence.2021.03.pdf",
+  "processed_at": "2025-10-29T20:32:32.342298",
+  "models_used": [
+    "vofc-engine:latest",
+    "mistral:latest",
+    "llama3:latest"
+  ],
+  "vulnerabilities_count": 16,
+  "vulnerabilities": [
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of coordination among community members to report observable behaviors that may indicate violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a reporting system for community members to share concerns about potential threats",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 3, Averting Targeted School Violence: A U.S. Secret Service Analysis of Plots Against Schools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Insufficient training and awareness among educational, medical, and public safety partners to recognize warning signs of violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Provide regular training sessions for community members on threat assessment and reporting best practices",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 6, Averting Targeted School Violence: A U.S. Secret Service Analysis of Plots Against Schools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Inadequate data collection and analysis to identify patterns and trends in targeted school violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a centralized database for tracking and analyzing threat assessment data",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 8, Averting Targeted School Violence: A U.S. Secret Service Analysis of Plots Against Schools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communications / Interoperability",
+      "vulnerability": "Limited information sharing and coordination among law enforcement agencies and schools to prevent targeted school violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop standardized protocols for reporting and responding to threats, and facilitate regular information-sharing sessions between law enforcement and schools",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 32, Averting Targeted School Violence: A U.S. Secret Service Analysis of Plots Against Schools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of community engagement and reporting",
+      "options_for_consideration": [
+        {
+          "option_text": "Encourage community members to report suspicious behavior related to potential school violence",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Executive Summary"
+            }
+          ]
+        },
+        {
+          "option_text": "Establish and promote anonymous reporting systems for students and community members",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Introduction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communications / Interoperability",
+      "vulnerability": "Insufficient information-sharing among agencies with protective and/or public safety responsibilities",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement protocols for effective communication and information-sharing between law enforcement, schools, and healthcare providers",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "The U.S. Secret Service’s National Threat Assessment Center (NTAC) was created in 1998"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Inadequate threat assessment methodologies and best practices",
+      "options_for_consideration": [
+        {
+          "option_text": "Adopt and implement the threat assessment methodologies developed by the U.S. Secret Service National Threat Assessment Center (NTAC)",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Director’s Message"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Resilience / Exercises",
+      "vulnerability": "Lack of preparedness and response planning for targeted school violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Conduct regular drills and exercises to test and improve emergency response plans for targeted school violence",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Director’s Message"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Access Control",
+      "vulnerability": "Insufficient controls to prevent unauthorized access to schools",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement and enforce strict access control measures, including visitor screening and ID verification",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Part I: Plotters’ Backgrounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Perimeter Security",
+      "vulnerability": "Weaknesses in perimeter security measures",
+      "options_for_consideration": [
+        {
+          "option_text": "Upgrade perimeter security by installing cameras, fencing, and access control systems",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Part I: Plotters’ Backgrounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Potential for cyber threats related to school security systems",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement robust cybersecurity measures to protect school security systems from potential threats",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Part I: Plotters’ Backgrounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of awareness about observable behaviors that may indicate targeted school violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement training programs for community members, educational, medical and public safety partners to recognize and report suspicious behavior",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Inadequate reporting of concerning behaviors",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a system for reporting and tracking suspicious behavior, and provide incentives for community members to report concerns",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Lack of understanding about the motivations and planning involved in targeted school violence",
+      "options_for_consideration": [
+        {
+          "option_text": "Conduct research to better understand the motivations, planning, and behaviors associated with targeted school violence, and use this information to inform prevention strategies",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communications / Interoperability",
+      "vulnerability": "Inadequate communication and coordination between law enforcement, schools, and community members",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish protocols for sharing information and coordinating responses to reports of suspicious behavior, and provide training on effective communication and collaboration",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Resilience / Exercises",
+      "vulnerability": "Lack of preparedness for responding to reports of suspicious behavior",
+      "options_for_consideration": [
+        {
+          "option_text": "Conduct regular exercises and drills to test response protocols, and provide training on effective responses to reports of suspicious behavior",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "Page 32"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "filename": "738190672-2-Std-SG-ORM1-2017-STD.pdf",
+  "processed_at": "2025-10-29T20:33:27.004853",
+  "models_used": [
+    "vofc-engine:latest",
+    "mistral:latest",
+    "llama3:latest"
+  ],
+  "vulnerabilities_count": 15,
+  "vulnerabilities": [
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of standardized risk management practices across supply chains",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a centralized risk management framework to ensure consistency and effectiveness",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ANSI/ASIS ORM.1-2017, Section 2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Inadequate security awareness and training for employees",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop a comprehensive security awareness program to educate employees on security best practices",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS International, Security Management magazine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Inadequate integration of physical and cyber security measures",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement a holistic approach to security that integrates both physical and cyber security measures",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS International, Security Management magazine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Resilience / Exercises",
+      "vulnerability": "Inadequate business continuity planning and exercises",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop a comprehensive business continuity plan and conduct regular exercises to test its effectiveness",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ANSI/ASIS ORM.1-2017, Section 5.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Perimeter Security",
+      "vulnerability": "Lack of physical security measures to protect against unauthorized access or intrusion",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement physical barriers such as fences, walls, and gates",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 4"
+            }
+          ]
+        },
+        {
+          "option_text": "Install security cameras and alarms for monitoring and detection",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Access Control",
+      "vulnerability": "Inadequate control over who has access to critical areas or systems",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement access cards and biometric authentication for employee access",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 5"
+            }
+          ]
+        },
+        {
+          "option_text": "Limit physical and digital access to critical systems to authorized personnel only",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Lack of comprehensive security management plan",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop and implement a written security policy and procedures",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 6"
+            }
+          ]
+        },
+        {
+          "option_text": "Assign responsibility for security to designated personnel and provide training",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of coordination and communication between security personnel and other departments",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a security committee or task force to coordinate efforts across departments",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 6"
+            }
+          ]
+        },
+        {
+          "option_text": "Develop and implement standardized communication protocols for security incidents",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communications / Interoperability",
+      "vulnerability": "Inadequate communication systems for emergency response and coordination",
+      "options_for_consideration": [
+        {
+          "option_text": "Install reliable communication equipment, such as radios or cell phones",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 7"
+            }
+          ]
+        },
+        {
+          "option_text": "Establish backup communication systems in case of primary system failure",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Resilience / Exercises",
+      "vulnerability": "Lack of disaster recovery and business continuity planning",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop and implement a disaster recovery plan, including backup power sources and data storage",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 8"
+            }
+          ]
+        },
+        {
+          "option_text": "Conduct regular emergency response drills and exercises to test plans and procedures",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Lack of protection against cyber threats to physical systems",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement cybersecurity measures, such as firewalls and antivirus software, for connected devices",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 9"
+            }
+          ]
+        },
+        {
+          "option_text": "Regularly update and patch connected devices to protect against known vulnerabilities",
+          "sources": [
+            {
+              "reference_number": 1,
+              "source_text": "ASIS ORM.1-2017, page 9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Management",
+      "vulnerability": "Inadequate risk management strategy",
+      "options_for_consideration": [
+        {
+          "option_text": "Implement a comprehensive risk management framework",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS ORM.1-2017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Governance / Coordination",
+      "vulnerability": "Lack of clear roles and responsibilities",
+      "options_for_consideration": [
+        {
+          "option_text": "Establish a clear organizational structure with defined roles and responsibilities",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS ORM.1-2017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Resilience / Exercises",
+      "vulnerability": "Inadequate business continuity planning",
+      "options_for_consideration": [
+        {
+          "option_text": "Develop a comprehensive business continuity plan and conduct regular exercises",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS ORM.1-2017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cyber-Physical",
+      "vulnerability": "Inadequate integration of physical and cybersecurity measures",
+      "options_for_consideration": [
+        {
+          "option_text": "Integrate physical and cybersecurity measures to ensure a holistic approach to risk management",
+          "sources": [
+            {
+              "reference_number": 0,
+              "source_text": "ASIS ORM.1-2017"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

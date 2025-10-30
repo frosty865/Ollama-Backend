@@ -1,0 +1,98 @@
+2025-10-29 20:26:17,034 [INFO] ==================================================
+2025-10-29 20:26:17,034 [INFO] Ollama Auto Processor - Watcher
+2025-10-29 20:26:17,034 [INFO] ==================================================
+2025-10-29 20:26:17,040 [INFO] ==================================================
+2025-10-29 20:26:17,040 [INFO] Press Ctrl+C to stop
+2025-10-29 20:26:17,040 [INFO] 
+2025-10-29 20:32:33,901 [ERROR] Failed to move file to processed: [WinError 2] The system cannot find the file specified: 'C:\\Users\\frost\\AppData\\Local\\Ollama\\automation\\incoming\\20251016_124454_USSS_Averting_Targeted_School_Violence.2021.03.pdf' -> 'C:\\Users\\frost\\AppData\\Local\\Ollama\\automation\\processed\\20251016_124454_USSS_Averting_Targeted_School_Violence.2021.03.pdf'
+2025-10-29 20:33:28,344 [ERROR] Failed to move file to processed: [WinError 2] The system cannot find the file specified: 'C:\\Users\\frost\\AppData\\Local\\Ollama\\automation\\incoming\\738190672-2-Std-SG-ORM1-2017-STD.pdf' -> 'C:\\Users\\frost\\AppData\\Local\\Ollama\\automation\\processed\\738190672-2-Std-SG-ORM1-2017-STD.pdf'
+2025-10-29 20:34:00,686 [ERROR] Error output: 2025-10-29 20:33:31,726 [INFO] ==================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 31: character maps to <undefined>
+Call stack:
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 384, in <module>
+    exit(main())
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 376, in main
+    result = process_document(file_path)
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 296, in process_document
+    logger.info(f"\U0001f680 Processing document: {file_path.name}")
+Message: '\U0001f680 Processing document: Workbook.pdf'
+Arguments: ()
+2025-10-29 20:33:31,726 [INFO] \U0001f680 Processing document: Workbook.pdf
+2025-10-29 20:33:31,729 [INFO] ==================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 31: character maps to <undefined>
+Call stack:
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 384, in <module>
+    exit(main())
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 376, in main
+    result = process_document(file_path)
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 301, in process_document
+    logger.info("\U0001f4c4 Extracting text from document...")
+Message: '\U0001f4c4 Extracting text from document...'
+Arguments: ()
+2025-10-29 20:33:31,729 [INFO] \U0001f4c4 Extracting text from document...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 31: character maps to <undefined>
+Call stack:
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 384, in <module>
+    exit(main())
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 376, in main
+    result = process_document(file_path)
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 303, in process_document
+    logger.info(f"\u2705 Extracted {len(text)} characters from document")
+Message: '\u2705 Extracted 0 characters from document'
+Arguments: ()
+2025-10-29 20:34:00,119 [INFO] \u2705 Extracted 0 characters from document
+2025-10-29 20:34:00,120 [ERROR] ==================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 306, in process_document
+    raise ValueError("Extracted text too short (may be image-only PDF)")
+ValueError: Extracted text too short (may be image-only PDF)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 32: character maps to <undefined>
+Call stack:
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 384, in <module>
+    exit(main())
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 376, in main
+    result = process_document(file_path)
+  File "C:\Users\frost\AppData\Local\Ollama\automation\vofc_pipeline.py", line 357, in process_document
+    logger.error(f"\u274c Processing failed after {elapsed:.2f} seconds")
+Message: '\u274c Processing failed after 28.39 seconds'
+Arguments: ()
+2025-10-29 20:34:00,120 [ERROR] \u274c Processing failed after 28.39 seconds
+2025-10-29 20:34:00,122 [ERROR] Error: Extracted text too short (may be image-only PDF)
+2025-10-29 20:34:00,122 [ERROR] ==================================================
+2025-10-29 20:34:00,122 [ERROR] Fatal error: Extracted text too short (may be image-only PDF)
+
