@@ -12,11 +12,11 @@ OLLAMA_URL=https://ollama.frostech.site
 SUPABASE_URL=https://YOURPROJECT.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=YOUR_SERVICE_KEY
 
-# Folder Configuration
-WATCH_FOLDER=C:/Users/frost/AppData/Local/Ollama/automation/incoming
-PROCESSED_FOLDER=C:/Users/frost/AppData/Local/Ollama/automation/processed
-ERROR_FOLDER=C:/Users/frost/AppData/Local/Ollama/automation/errors
-LIBRARY_FOLDER=C:/Users/frost/AppData/Local/Ollama/automation/library
+# Folder Configuration - Uses data directory (aligned with Flask server)
+WATCH_FOLDER=C:/Users/frost/AppData/Local/Ollama/data/incoming
+PROCESSED_FOLDER=C:/Users/frost/AppData/Local/Ollama/data/processed
+ERROR_FOLDER=C:/Users/frost/AppData/Local/Ollama/data/errors
+LIBRARY_FOLDER=C:/Users/frost/AppData/Local/Ollama/data/library
 LOG_DIR=C:/Users/frost/AppData/Local/Ollama/automation/logs
 
 # Model Configuration

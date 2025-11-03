@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+
+# Logs and runtime
+logs/
+*.log
+*.pid
+
+# Data artifacts
+*.sqlite*
+*.db
+*.db-*
+/data/
+automation/logs/
+automation/errors/
+automation/processed/
+files/
+processed/
+errors/
+
+# Large documents
+*.pdf
+*.docx
+*.xlsx
+
+# System/IDE
+*.code-workspace
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+scripts/*.env
+automation/.env
+scripts/.env
+config.yeml
+config.yaml
+
+# Build caches
+node_modules/
+.dist/
+.build/
+
+# Cursor workspace (may contain secrets)
+.cursor/
+
+

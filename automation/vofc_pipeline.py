@@ -22,9 +22,11 @@ load_dotenv()
 OLLAMA_URL = os.getenv("OLLAMA_URL", "https://ollama.frostech.site").rstrip("/")
 SUPABASE_URL = os.getenv("SUPABASE_URL", "").rstrip("/")
 SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
-PROCESSED_FOLDER = os.getenv("PROCESSED_FOLDER", "C:/Users/frost/AppData/Local/Ollama/automation/processed")
-LIBRARY_FOLDER = os.getenv("LIBRARY_FOLDER", "C:/Users/frost/AppData/Local/Ollama/automation/library")
-LOG_DIR = os.getenv("LOG_DIR", "C:/Users/frost/AppData/Local/Ollama/automation/logs")
+# Use the same data directory as Flask server for consistency
+DATA_DIR = os.path.join(os.path.expanduser('~'), 'AppData', 'Local', 'Ollama', 'data')
+PROCESSED_FOLDER = os.getenv("PROCESSED_FOLDER", os.path.join(DATA_DIR, "processed"))
+LIBRARY_FOLDER = os.getenv("LIBRARY_FOLDER", os.path.join(DATA_DIR, "library"))
+LOG_DIR = os.getenv("LOG_DIR", os.path.join(os.path.dirname(__file__), "logs"))
 
 # Multi-model configuration
 MODELS = [
