@@ -1,25 +1,51 @@
-# VOFC Ollama Backend (Unified Directory Setup)
+# Ollama-Backend (VOFC Engine)
 
-- Service root: `C:\Users\frost\AppData\Local\Ollama`
-- FastAPI entrypoint: `app/main.py`
-- API base: `http://localhost:8000`
-- Requires `Authorization: Bearer <BACKEND_API_KEY>` on all endpoints
+Production-friendly Flask service that:
 
-## Endpoints
-- POST `/process-one`
-- POST `/process-pending`
-- POST `/sync`
-- GET `/status`
-- GET `/logs`
+- Watches `/incoming` for new docs
+- Calls Ollama (`OLLAMA_URL`, `OLLAMA_MODEL`) to extract VOFC JSON
+- Writes results to `/processed` (and errors to `/errors`)
+- Mirrors metadata to Supabase (`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`)
+- Exposes health and document-processing APIs used by VOFC Viewer
 
-## Environment
-Place `.env` in the service root with keys described in `.env.example`.
+## Environment (reuses vofc-engine .env)
 
-## Run Locally
-```powershell
-python -m pip install -r requirements.txt
-python .\app\main.py
+- SUPABASE_URL
+- SUPABASE_SERVICE_ROLE_KEY
+- OLLAMA_URL (e.g., http://localhost:11434)
+- OLLAMA_MODEL (e.g., vofc-engine)
+- STORAGE_ROOT (default: repo root)
+- INCOMING_DIR (default: incoming)
+- PROCESSED_DIR (default: processed)
+- ERRORS_DIR (default: errors)
+- LIBRARY_DIR (default: library)
+- PORT (default: 8080)
+- HOST (default: 0.0.0.0)
+- FLASK_ENV (production|development)
+
+## Run
+
+```bash
+pip install -r requirements.txt
+python -m app.server
 ```
 
-## Windows Service (NSSM)
-Use NSSM to install the service pointing to `app/main.py` and set logs in `logs/`.
+# or
+
+```bash
+gunicorn -w 4 -b 0.0.0.0:${PORT:-8080} app.server:app
+```
+
+## Automation
+
+```bash
+python ollama_auto_processor.py
+```
+
+## API
+
+- GET  `/api/system/health`
+- POST `/api/documents/submit`            # multipart/form-data or JSON {url}
+- POST `/api/documents/process-one`       # {path? submission_id?}
+- POST `/api/documents/process-pending`   # batch local pending
+- POST `/api/documents/sync`              # optional future use
